@@ -2,9 +2,9 @@
    Nao edite a mao: este arquivo e substituido a cada sincronizacao. So contem datas.
    "fim" e o dia do check-out (fica livre nesse dia). */
 const DISPONIBILIDADE = {
-  atualizado: "2026-11-15T01:00",
+  atualizado: "2026-11-15T18:49",
   ocupado: {
-    "caiapo": [{ inicio: "2026-11-19", fim: "2026-11-21" }, { inicio: "2026-11-27", fim: "2026-11-29" }, { inicio: "2026-12-05", fim: "2026-12-07" }, { inicio: "2026-12-28", fim: "2026-12-30" }, { inicio: "2027-01-25", fim: "2027-01-29" }, { inicio: "2027-03-04", fim: "2027-03-22" }],
+    "caiapo": [{ inicio: "2026-11-19", fim: "2026-11-21" }, { inicio: "2026-11-27", fim: "2026-11-29" }, { inicio: "2026-12-05", fim: "2026-12-07" }, { inicio: "2026-12-28", fim: "2026-12-30" }, { inicio: "2027-01-25", fim: "2027-01-29" }, { inicio: "2027-03-06", fim: "2027-03-22" }],
     "solimoes": [{ inicio: "2026-11-17", fim: "2026-11-22" }, { inicio: "2026-12-04", fim: "2026-12-07" }, { inicio: "2027-01-27", fim: "2027-01-31" }, { inicio: "2027-03-01", fim: "2027-03-05" }, { inicio: "2027-03-06", fim: "2027-03-22" }, { inicio: "2027-04-04", fim: "2027-04-08" }],
     "amazonas": [{ inicio: "2026-12-04", fim: "2026-12-07" }, { inicio: "2027-03-01", fim: "2027-03-05" }, { inicio: "2027-03-06", fim: "2027-03-22" }, { inicio: "2027-09-02", fim: "2027-09-20" }, { inicio: "2027-11-05", fim: "2027-11-15" }],
     "xingu": [{ inicio: "2026-12-04", fim: "2026-12-07" }, { inicio: "2027-03-01", fim: "2027-03-13" }],
