@@ -2,7 +2,7 @@
    Nao edite a mao: este arquivo e substituido a cada sincronizacao. So contem datas.
    "fim" e o dia do check-out (fica livre nesse dia). */
 const DISPONIBILIDADE = {
-  atualizado: "2026-11-14T21:52",
+  atualizado: "2026-11-14T22:55",
   ocupado: {
     "caiapo": [{ inicio: "2026-11-19", fim: "2026-11-21" }, { inicio: "2026-11-27", fim: "2026-11-29" }, { inicio: "2026-12-05", fim: "2026-12-07" }, { inicio: "2026-12-28", fim: "2026-12-30" }, { inicio: "2027-01-25", fim: "2027-01-29" }, { inicio: "2027-03-04", fim: "2027-03-22" }],
     "solimoes": [{ inicio: "2026-11-17", fim: "2026-11-22" }, { inicio: "2026-12-04", fim: "2026-12-07" }, { inicio: "2027-01-27", fim: "2027-01-31" }, { inicio: "2027-03-01", fim: "2027-03-05" }, { inicio: "2027-03-06", fim: "2027-03-22" }, { inicio: "2027-04-04", fim: "2027-04-08" }],
