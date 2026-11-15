@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hospedagens Ci&amp;Jo</title>
+  <meta name="description" content="Apartamentos das tias Ci&Jo para alugar — fotos, disponibilidade e eventos por perto.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="icon" href="logo-ciejo.png">
+</head>
+<body>
+
+  <!-- TOPO -->
+  <header class="topo">
+    <nav class="menu">
+      <a class="marca" href="#"><img class="marca-logo" src="logo-ciejo.png" alt=""><span>CI <b>&amp;</b> JO</span></a>
+      <div class="menu-links">
+        <a href="#apartamentos">Apartamentos</a>
+        <a href="#perto">O que tem perto</a>
+        <a href="#calendario">Calendário</a>
+        <a href="#eventos">Eventos</a>
+      </div>
+    </nav>
+
+    <div class="hero">
+      <div class="hero-texto">
+        <h1>CI <span>&amp;</span> JO</h1>
+        <hr class="filete">
+        <p class="lema">Bagagem a gente leva, experiência a gente divide.</p>
+        <p class="hero-desc">Nossos apartamentos em São Paulo e Londres, as datas livres e o que está acontecendo por perto, tudo num só lugar. Escolha, confira o calendário e reserve direto no Airbnb, Booking ou Vrbo.</p>
+        <div class="hero-acoes">
+          <a class="botao botao-ouro" href="#apartamentos">Ver apartamentos</a>
+          <a class="botao botao-contorno" href="#calendario">Datas disponíveis</a>
+        </div>
+      </div>
+      <img class="logo-hero" src="logo-ciejo.png" alt="Logo Ci &amp; Jo">
+    </div>
+  </header>
+
+  <main>
+    <!-- APARTAMENTOS -->
+    <section id="apartamentos" class="secao">
+      <div class="secao-cabeca">
+        <span class="etiqueta etiqueta-rosa">Onde ficar</span>
+        <h2>Nossos <em>apartamentos</em></h2>
+        <p>Cada um com o link direto para reservar na plataforma onde está anunciado.</p>
+      </div>
+      <div class="filtros" id="filtro-cidades" role="group" aria-label="Filtrar por cidade"></div>
+      <div class="grade-aptos" id="lista-aptos"></div>
+    </section>
+
+    <!-- O QUE TEM PERTO (abas por região) -->
+    <section id="perto" class="secao-interlagos">
+      <div class="interlagos-interno">
+        <div class="abas-regiao" id="abas-regiao" role="tablist" aria-label="Escolher região"></div>
+        <div class="interlagos-cabeca">
+          <span class="etiqueta etiqueta-ouro" id="perto-etiqueta"></span>
+          <h2>O que tem <em>perto</em> <span id="perto-titulo"></span></h2>
+          <p id="perto-texto"></p>
+          <div class="interlagos-aptos" id="interlagos-aptos"></div>
+        </div>
+        <div class="grade-lugares" id="lista-lugares"></div>
+        <p class="nota-distancia">Distâncias aproximadas a partir dos apartamentos.</p>
+      </div>
+    </section>
+
+    <!-- CALENDÁRIO -->
+    <section id="calendario" class="secao secao-blush">
+      <div class="secao-cabeca">
+        <span class="etiqueta etiqueta-ouro-claro">Disponibilidade</span>
+        <h2>Calendário de <em>ocupação</em></h2>
+        <p>Veja, dia a dia, quais apartamentos estão livres e quais já estão reservados. Toque num dia para ver os detalhes e reservar.</p>
+      </div>
+
+      <div class="cal-barra">
+        <div class="cal-modos" role="tablist" aria-label="Forma de ver o calendário">
+          <button class="cal-modo" role="tab" data-modo="linha" aria-selected="true">Por apartamento</button>
+          <button class="cal-modo" role="tab" data-modo="mes" aria-selected="false">Mês</button>
+        </div>
+        <div class="cal-mes">
+          <button class="cal-nav" id="mes-anterior" aria-label="Mês anterior">‹</button>
+          <h3 id="mes-titulo"></h3>
+          <button class="cal-nav" id="mes-proximo" aria-label="Próximo mês">›</button>
+        </div>
+      </div>
+
+      <div class="cal-filtro" id="filtro-cal" role="group" aria-label="Escolher apartamento"></div>
+
+      <div class="cal-layout" id="cal-layout">
+        <div class="cal-card">
+          <div id="cal-vista"></div>
+          <div class="cal-legenda" id="cal-legenda"></div>
+          <p class="cal-atualizado" id="cal-atualizado" hidden></p>
+        </div>
+
+        <aside class="dia-painel" id="dia-painel" aria-live="polite"></aside>
+      </div>
+    </section>
+
+    <!-- EVENTOS -->
+    <section id="eventos" class="secao">
+      <div class="secao-cabeca">
+        <span class="etiqueta etiqueta-ouro">Agenda</span>
+        <h2>Agenda de eventos <em>na região</em></h2>
+        <p>Grandes eventos, feiras e festivais a poucos minutos dos nossos apartamentos. Confira a disponibilidade para as datas e garanta sua hospedagem com antecedência.</p>
+      </div>
+      <div class="filtros" id="filtro-eventos" role="group" aria-label="Filtrar eventos por cidade"></div>
+      <div class="lista-eventos" id="lista-eventos"></div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <img class="logo-rodape" src="logo-ciejo.png" alt="Logo Ci &amp; Jo">
+    <p class="lema">Bagagem a gente leva, experiência a gente divide.</p>
+    <p class="rodape-links" id="rodape-links"></p>
+    <p class="rodape-nota">As reservas e pagamentos são feitos diretamente no Airbnb, Booking ou Vrbo.</p>
+    <details class="creditos">
+      <summary>Créditos das fotos</summary>
+      <p>Fotos dos apartamentos: anúncios Ci &amp; Jo. Fotos de eventos e lugares: Wikimedia Commons.</p>
+      <ul id="lista-creditos"></ul>
+    </details>
+  </footer>
+
+  <script src="dados.js"></script>
+  <script src="disponibilidade.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
